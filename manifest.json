@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "tab switcher",
+  "description": "This extension switches between the current and most recently active tab",
+  "version": "1.0",
+
+  "commands":{
+    "switch-tab":{
+      "suggested_key":{"default": "MacCtrl+Q"},
+      "description":"switch to most recent tab"
+    }
+  },
+
+  "icons":{
+    "128":"icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
